@@ -5,7 +5,7 @@ import 'package:rflutter_alert/rflutter_alert.dart';
 QuizBrain quizbrain = QuizBrain();
 
 void main() {
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     home: MyApp(),
   ));
 }
@@ -38,12 +38,12 @@ class _MyAppState extends State<MyApp> {
       } else {
         if (userAnswer == correctAnswer) {
           scoreKeeper.add(
-            Icon(Icons.check, color: Colors.green),
+            const Icon(Icons.check, color: Colors.green),
           );
           // Alert(context: context,title: "Quiz Finished",desc: "The quiz if finished").show();
         } else {
           scoreKeeper.add(
-            Icon(Icons.close, color: Colors.red),
+            const Icon(Icons.close, color: Colors.red),
           );
         }
         quizbrain.nextQuestion();
@@ -70,7 +70,7 @@ class _MyAppState extends State<MyApp> {
                     child: Text(
                       quizbrain.getQuestionText(),
                       textAlign: TextAlign.center,
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: Colors.white,
                         fontSize: 25.0,
                       ),
@@ -86,7 +86,7 @@ class _MyAppState extends State<MyApp> {
                       checkAnswer(true);
                     },
                     color: Colors.green,
-                    child: Text(
+                    child: const Text(
                       "True",
                       style: TextStyle(
                         color: Colors.white,
@@ -104,7 +104,7 @@ class _MyAppState extends State<MyApp> {
                       checkAnswer(false);
                     },
                     color: Colors.red,
-                    child: Text(
+                    child: const Text(
                       "False",
                       style: TextStyle(
                         color: Colors.white,

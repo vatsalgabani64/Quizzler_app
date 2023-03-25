@@ -2,7 +2,7 @@ import 'questions.dart';
 
 class QuizBrain{
   int _questionNumber=0;
-  List<Questions> _questionBank = [
+  final List<Questions> _questionBank = [
     Questions(questionText:'Whenever you live,there will always be war \n -Hashirama Senju',questionAnswer:true),
     Questions(questionText:'Those Who Do Not Understand True Pain Can Never Understand True Peace \n -Pain',questionAnswer:true),
     Questions(questionText: 'You overestimate your own abilities with no idea of the depth of my own \n -Itachi Uchiha', questionAnswer: true),
